@@ -1,0 +1,198 @@
+
+:root {
+    --left: 40vw;
+    --right: 60vw;
+    --grey-background: rgba(249,250,252,255);
+    font-family: 'Public Sans', sans-serif;
+}
+
+@font-face {
+    font-family: "Norse";
+    src: url("../fonts/Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-VariableFont_wght.ttf");
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.left-container {
+    background-image: url("../img/ivana-cajina-asuyh-_ZX54-unsplash.jpg");
+    background-size: cover;
+    width: var(--left);
+    min-width: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: var(--right);
+    background-color: var(--grey-background);
+    min-width: 654px;
+}
+
+.photo-credits>p>a {
+    color: white;
+}
+
+.logo {
+    width: 10rem;
+}
+
+.title-background {
+    font-family: Norse, sans-serif;
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin: auto;
+}
+
+.photo-credits {
+    margin-bottom: 10px;
+}
+
+.text {
+    font-weight: 600;
+    width: 75%;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-top: 100px;
+    max-width: 604px;
+}
+
+em {
+    font-style: italic;
+}
+
+.text, .right-container > p {
+    margin-left: 50px;
+}
+
+input {
+    width: 15rem;
+    height: 1.3rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+.form-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 15px 0 15px 0;
+}
+
+.form-group {
+    background-color: white;
+    padding-left: 50px;
+    box-shadow: 0px 5px 5px -5px rgba(0,0,0,0.75);
+    padding-bottom: 40px;
+    min-width: 475px;
+    margin-bottom: 20px;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 252px);
+    column-gap: 50px;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: calc(15rem + 12px);
+}
+
+button {
+    font-family: 'Public Sans', sans-serif;
+    margin: 20px 0 0 50px;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #1b0047;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+input:focus {
+    box-shadow: 0px 0px 5px 1px #4900be;
+}
+
+.error-message {
+    color: red; /* Example: customize error message color */
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #4900be;
+}
+
+form ~ p {
+    margin-left: 50px;
+    font-weight: 600;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 1px solid #4900be;
+}
+
+form ~ p > a {
+    color: #1b0047;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .inputs {
+        grid-template-columns: 1fr; /* Switch to a single column on smaller screens */
+    }
+
+    .right-container, .left-container {
+        width: 100vw;
+    }
+
+    .left-container {
+        min-height: 300px;    
+    }
+
+    body {
+        flex-direction: column;
+    }
+}
+
+
+
+#password { 
+    margin-bottom: 5px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Today!</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="left-container">
+        <div class="title-background">
+            <img class="logo" src="./img/odin-lined.png" alt="The Odin Project Logo">
+            <h1>ODIN</h1>
+        </div>
+        <div class="photo-credits">
+            <p>Photo by <a
+                    href="https://unsplash.com/@von_co?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ivana
+                    Cajina</a> on <a
+                    href="https://unsplash.com/photos/asuyh-_ZX54?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <div class="text">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams.</p>
+            <p>Sign up <em>now</em> to get started.</p>
+            <br>
+            <p>You know you want to.</p>
+        </div>
+        <form id="signupForm" action="http://midevworks.com">
+            <div class="form-group">
+                <h2 class="form-title">Let's do this!</h2>
+                <div class="inputs">
+                    <div class="input-group">
+                        <label for="first-name">*FIRST NAME</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">*LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">*EMAIL</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">*PASSWORD</label>
+                        <input type="password" name="password" id="password" minlength="8"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&*!])[A-Za-z\d@#$%^&*!]+$" required>
+                            <div class="error-message" id="password-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <label for="password-confirm">*CONFIRM PASSWORD</label>
+                        <input type="password" name="password-confirm" id="password-confirm" required>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Login</a></p>
+    </div>
+</body>
+
+</html>
