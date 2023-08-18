@@ -1,6 +1,6 @@
 # Imaginary Service Signup Form
 
-![Project Screenshot]([screenshot.png](https://github.com/bjclifton/signup-form/assets/103290555/5f91ea23-6d73-40fa-b9d0-1bdf342bc286))
+![Project Screenshot](https://github.com/bjclifton/signup-form/assets/103290555/5f91ea23-6d73-40fa-b9d0-1bdf342bc286)
 
 ## Description
 
